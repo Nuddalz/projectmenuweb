@@ -1,0 +1,539 @@
+:root{
+  --main-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --main-color: #E67E22;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  li {
+    list-style: none;
+  }
+
+  .navbar {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+    background-color: rgb(8, 8, 8);
+    color: #000000;
+    overflow: hidden;
+    width: 100vw;
+    top: 0;
+    background: var(--main-color);
+  }
+.nav-links a:hover{
+  color: aliceblue;
+}
+  
+  .nav-links a {
+    color: #000000;
+  }
+
+  /* LOGO */
+  .logo {
+    font-size: 32px;
+  }
+  .logo span{
+    color: rgb(151, 86, 0);
+  }
+  
+  /* NAVBAR MENU */
+  .menu {
+    overflow: hidden;
+    display: flex;
+    gap: 1em;
+    font-size: 20px;
+  }
+  .menu li {
+    padding: 5px 14px;
+  }
+  #pagewrapper{
+    position: relative;
+  }
+
+.header{
+  position: fixed;
+  width: 100vw;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+/*----- Burgers Menu ----*/
+#grid-container{
+  padding-top: 170px;
+  text-align: center;
+}
+.grid-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding-top: 50px;
+  align-items: center;
+  text-align: left;
+  row-gap: 20px;
+  column-gap: 2px;
+  padding-left: 150px;
+  padding-right: 150px;
+  row-gap: 50px;
+  column-gap: 20px;
+}
+.grid-item{
+  border-radius: 10px;
+  border-style: groove;
+}
+.burger{
+  width: 100%;
+  max-width: 350px;
+  max-height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.grid-item > figcaption{
+  font-family: var(--main-font);
+  font-weight: 600;
+}
+.grid-item > p{
+ color: var(--main-color);
+ font-style: italic;
+ font-weight: 600;
+ font-family: var(--main-font);
+}
+/*---- Sandwich Menu ----*/
+#grid-sandwich{
+  padding-top: 170px;
+  text-align: center;
+}
+.grid-sandwich{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding-top: 50px;
+  align-items: center;
+  text-align: left;
+  row-gap: 20px;
+  column-gap: 2px;
+  padding-left: 150px;
+  padding-right: 150px;
+  row-gap: 50px;
+  column-gap: 20px;
+}
+.grid-item2{
+  border-radius: 10px;
+  border-style: groove;
+}
+.sandwich{
+  width: 100%;
+  max-width: 350px;
+  max-height: 150px;
+  object-fit: cover;
+}
+.grid-item2 > figcaption{
+  font-family: var(--main-font);
+  font-weight: 600;
+}
+.grid-item2 > p{
+  color: var(--main-color);
+  font-family: var(--main-font);
+  font-style: italic;
+  font-weight: 600;
+}
+/*------- Self Treat & tacos------*/
+#selftreat-bnb{
+  padding-top: 170px;
+  text-align: center;
+}
+.selftreat-bnb{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding-top: 50px;
+  align-items: center;
+  text-align: left;
+  row-gap: 20px;
+  column-gap: 2px;
+  padding-left: 150px;
+  padding-right: 150px;
+  row-gap: 50px;
+  column-gap: 20px;
+}
+
+.grid-selftreat{
+  border-radius: 10px;
+  border-style: groove;
+}
+.selftreat{
+  width: 100%;
+  max-width: 350px;
+  max-height: 150px;
+  object-fit: cover;
+}
+.grid-selftreat > figcaption{
+  font-family: var(--main-font);
+  font-weight: 600;
+}
+.grid-selftreat > p{
+  color: var(--main-color);
+  font-family: var(--main-font);
+  font-style: italic;
+  font-weight: 600;
+}
+#selftreat-bnb > ul{
+  font-style: italic;
+}
+#selftreat-bnb > ul{
+  color: var(--main-color);
+  font-family: var(--main-font);
+  font-style: italic;
+  font-weight: 600;
+}
+
+#selftreat-tacos{
+  padding-top: 10px;
+  text-align: center;
+}
+.selftreat-tacos{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding-top: 50px;
+  align-items: center;
+  text-align: left;
+  row-gap: 20px;
+  column-gap: 2px;
+  padding-left: 150px;
+  padding-right: 150px;
+  row-gap: 50px;
+  column-gap: 20px;
+}
+.grid-tacos{
+  border-radius: 10px;
+  border-style: groove;
+}
+.tacos{
+  width: 100%;
+  max-width: 350px;
+  max-height: 150px;
+  object-fit: cover;
+}
+.grid-tacos > figcaption{
+  font-family: var(--main-font);
+  font-weight: 600;
+}
+.grid-tacos > p{
+  color: var(--main-color);
+  font-family: var(--main-font);
+  font-style: italic;
+  font-weight: 600;
+}
+
+/*------ Set Meal -----*/
+#set-meal{
+  padding-top: 150px;
+  text-align: center;
+}
+#set-meal > figcaption{
+  font-style: italic;
+  font-weight: 500;
+}
+.grid-setmeal > figcaption{
+  font-family: var(--main-font);
+  font-weight: 600;
+}
+
+.set-meal{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding-top: 50px;
+  align-items: center;
+  text-align: left;
+  padding-left: 150px;
+  padding-right: 150px;
+  row-gap: 50px;
+  column-gap: 20px;
+}
+.grid-setmeal{
+  border-radius: 10px;
+  border-style: groove;
+}
+.setmeal{
+  width: 100%;
+  max-width: 350px;
+  max-height: 150px;
+  object-fit: cover;
+}
+
+/*----- Fried Rice ---- */
+#fried-rice{
+  padding-top: 150px;
+  text-align: center;
+}
+.fried-rice{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding-top: 50px;
+  align-items: center;
+  text-align: left;
+  padding-left: 150px;
+  padding-right: 150px;
+  row-gap: 50px;
+  column-gap: 20px;
+}
+.grid-friedrice{
+  border-radius: 10px;
+  border-style: groove;
+}
+.friedrice{
+  width: 100%;
+  max-width: 350px;
+  max-height: 150px;
+  object-fit: cover;
+}
+.grid-friedrice > figcaption{
+  font-family: var(--main-font);
+  font-weight: 600;
+}
+.grid-friedrice > p{
+  color: var(--main-color);
+  font-family: var(--main-font);
+  font-style: italic;
+  font-weight: 600;
+}
+/*----- Pasta and Soup ----*/
+#pasta-soup{
+  padding-top: 100px;
+  text-align: center;
+}
+.grid-pasta > figcaption{
+  font-family: var(--main-font);
+  font-weight: 600;
+}
+.grid-pasta > p{
+  color: var(--main-color);
+  font-family: var(--main-font);
+  font-style: italic;
+  font-weight: 600;
+}
+.pasta-soup{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding-top: 50px;
+  align-items: center;
+  text-align: left;
+  padding-left: 150px;
+  padding-right: 150px;
+  row-gap: 50px;
+  column-gap: 20px;
+}
+.grid-pasta{
+  border-radius: 10px;
+  border-style: groove;
+}
+.pasta{
+  width: 100%;
+  max-width: 350px;
+  max-height: 150px;
+  object-fit: cover;
+}
+
+/*------ Breakfast Menu ----*/
+#bfast-menu{
+  padding-top: 100px;
+  text-align: center;
+}
+
+.bfast-menu > ul{
+  font-style: italic;
+}
+.bfast-menu{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+.grid-bfastmenu{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+}
+
+/*------ Appetizer -----*/
+.appetizer > h1{
+  padding-bottom: 50px;
+}
+.grid-appetizer{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+}
+
+/*----- Refreshers ------*/
+#sweets{
+  padding-top: 100px;
+  text-align: center;
+}
+#sweets > h1{
+  padding-bottom: 50px;
+}
+.sweets{
+  padding-bottom: 50px;
+}
+.grid-sweets{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+}
+.grid-shakes{
+  padding-top: 50px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+}
+.coffee{
+  padding-top: 50px;
+}
+.grid-coffee{
+  padding-top: 15px;
+  display: block;
+}
+.grid-coffee > .coffee1{
+  padding-bottom: 15px;
+}
+.float{
+  padding-top: 50px;
+}
+.grid-float{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+}
+
+/*----- Drinks ----*/
+#liqour{
+  padding-top: 100px;
+  text-align: center;
+}
+#liqour > h1{
+  padding-bottom: 50px;
+}
+.grid-liqour, .grid-shots, .grid-wine, .grid-drinks{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+}
+.shots > h1{
+  padding: 30px 0 30px 0;
+}
+.wine > h1{
+  padding: 30px 0 30px 0;
+}
+.beers > h1{
+  padding: 30px 0 30px 0;
+}
+.grid-beers{
+  padding-top: 15px;
+  display: block;
+}
+.grid-beers > .beer1{
+  padding-bottom: 15px;
+}
+.drinks > h1{
+  padding: 30px 0 30px 0;
+}
+
+/*------ STYLES ------*/
+h1{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+}
+.price{
+  color: var(--main-color);
+  font-family: var(--main-font);
+  font-style: italic;
+  font-weight: 600;
+}
+.caption{
+  font-size: 12px;
+  font-family: var(--main-font);
+}
+.caption1{
+  font-family: var(--main-font);
+  font-weight: 600;
+
+}
+/* ------- Contacts ------- */
+.contact-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 80vh;
+  padding: 0 2rem;
+}
+.contact-links{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 980px;
+  margin-top: 4rem;
+  flex-wrap: wrap;
+}
+.contact-details {
+  font-size: 2.4rem;
+  font-family: var(--main-font);
+  padding: 0 2rem;
+}
+.contact-links a{
+  font-size: 25px;
+}
+
+.contact-section-header{
+  font-size: 25px;
+}
+
+/* ------- Footer ------ */
+footer {
+  font-weight: 300;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2rem;
+  border-top: 4px solid rgb(0, 0, 0);
+  background-color: var(--main-color)
+}
+
+footer > p {
+  margin: 2rem;
+  font-family: var(--main-font);
+  font-size: 1.5rem;
+  font-weight: 350;
+}
